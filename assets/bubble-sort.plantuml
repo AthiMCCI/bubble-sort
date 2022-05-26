@@ -8,6 +8,7 @@ while (Iterate all elements from 0th index to N-1 position.And iterate) is (TRUE
     if (compare current value and next value) is (TRUE) then
         :swap two numbers;
     endif 
+    
     endwhile (False)
 endwhile (False)
 while (Iterate all  elements from 0th index to num-1 position,And iterate them) is (TRUE)
