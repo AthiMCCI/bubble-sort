@@ -24,7 +24,6 @@ Author:
 
 */
 
-
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
@@ -44,8 +43,8 @@ Function:
 
 Definition:
     int main(
-    void
-    );
+        void
+        );
 
 Returns:
     Functions returning type: nothing.
@@ -53,46 +52,29 @@ Returns:
 */
 
 void SwapFunc(int *i, int *j)
-
     {
-
     int Temp;
 
     Temp = *i;
-
     *i = *j;
-
     *j = Temp;
-
     }
 
 void bubbleSortExample(int *arr, int num)
-
-{
-
+    {
     int x, y, temp;
 
-    for(x = 0; x < num; x++)
-
+    for (x = 0; x < num; x++)
         {
-
-        for(y = 0; y < num - x - 1; y++)
-
+        for (y = 0; y < num - x - 1; y++)
             {
-
-            if (*(arr + y )> *(arr + y + 1))
-
-            {
-
-            SwapFunc ((arr+y),(arr+y+1));
-
+            if (*(arr + y) > *(arr + y + 1))
+                {
+                SwapFunc ((arr + y),(arr + y + 1));
+                }
             }
-
         }
-
     }
-
-}
 
 /*
 
@@ -103,8 +85,8 @@ Function:
 
 Definition:
     int main(
-    void
-    );
+        void
+        );
 
 Returns:
     Functions returning type: integer.
@@ -113,31 +95,20 @@ Returns:
 
 
 int main(void)
-
     {
-
-    int *arr, n=15, x;
-
+    int *arr, n = 15, x;
     arr = (int *) malloc(15 * sizeof(int));
 
     printf("Please Enter the Value of Elements:");
-
-    for(x = 0; x < n; x++)
-
-    scanf("%d", (arr + x));
+    for (x = 0; x < n; x++)
+        scanf("%d", (arr + x));
 
     bubbleSortExample(arr, n);
 
     printf("Array after implementing bubble sort: ");
-
-    for(x = 0; x < n; x++)
-
+    for (x = 0; x < n; x++)
         {
-
-        printf("%d  ", *(arr+x));
-
+        printf("%d  ", *(arr + x));
         }
-
     getch();
-
     }
