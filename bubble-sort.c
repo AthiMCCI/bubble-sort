@@ -60,6 +60,7 @@ void SwapFunc(int *i, int *j)
     *i = *j;
     *j = Temp;
     }
+
 /*
 
 Name: bubblesort.
@@ -79,6 +80,7 @@ Returns:
     Functions returning type: nothing.
 
 */
+
 void bubbleSortExample(int *arr, int num)
     {
     int x, y, temp;
