@@ -112,7 +112,6 @@ Returns:
 
 */
 
-
 int main(void)
     {
     int *arr, n = 15, x;
