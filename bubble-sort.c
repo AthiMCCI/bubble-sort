@@ -42,8 +42,9 @@ Function:
     exchanging the values of two variables
 
 Definition:
-    int main(
-        void
+    void SwapFunc(
+        int *i,
+        int *j
         );
 
 Returns:
@@ -59,7 +60,25 @@ void SwapFunc(int *i, int *j)
     *i = *j;
     *j = Temp;
     }
+/*
 
+Name: bubblesort.
+
+Function:
+    It compares two adjacent elements to find which one is greater or
+    lesser and switches them based on the given condition until the final place
+    of the element is found.
+
+Definition:
+    void bubbleSortExample(
+        int *arr,
+        int num
+        );
+
+Returns:
+    Functions returning type: nothing.
+
+*/
 void bubbleSortExample(int *arr, int num)
     {
     int x, y, temp;
@@ -70,7 +89,7 @@ void bubbleSortExample(int *arr, int num)
             {
             if (*(arr + y) > *(arr + y + 1))
                 {
-                SwapFunc ((arr + y),(arr + y + 1));
+                SwapFunc ((arr + y), (arr + y + 1));
                 }
             }
         }
